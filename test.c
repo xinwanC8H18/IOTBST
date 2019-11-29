@@ -16,10 +16,21 @@ int main(int argc, char const *argv[])
         scanf("%d", &term);
         root = insert(root, term);
     }
-    
+
+
     inOrder(root); 
     printf("\n");
-    preOrder(root);   
+   
+    printf("%d\n", maxValue(root)->key);
+    printf("\n");
 
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%d", &term);
+        root = delete(root, term);
+        inOrder(root); 
+        printf("\n");
+    }
+    
     return 0;
 }
