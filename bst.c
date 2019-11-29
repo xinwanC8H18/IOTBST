@@ -1,10 +1,6 @@
-<<<<<<< HEAD
 #include "bst.h"
 #include <stdlib.h>
 
-=======
-///bst.c
->>>>>>> 4075a0a91721846927e88473c5270d8beb473121
 struct node *newNode(int n)
 {
     struct node *p = (struct node *)malloc(sizeof(struct node));
@@ -45,7 +41,6 @@ void inOrder(struct node *root)
     }
 }
 
-<<<<<<< HEAD
 void preOrder(struct node *root)
 {
     if(root != NULL){
@@ -54,6 +49,3 @@ void preOrder(struct node *root)
         preOrder(root->right);
     }  
 }
-=======
-}
->>>>>>> 4075a0a91721846927e88473c5270d8beb473121
