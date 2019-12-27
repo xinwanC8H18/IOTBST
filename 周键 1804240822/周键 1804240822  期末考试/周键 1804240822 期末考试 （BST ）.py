@@ -101,6 +101,7 @@ if __name__ == '__main__':
     c.right = g
     e.right = h
     h.left = i
+    input_in_order(a)
     print(search1(a, 13))
     print(search2(a,13))
     print(max_value1(a))
